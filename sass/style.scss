@@ -1,7 +1,11 @@
 $cor-fundo:#261C1C;
 $cor-texto:#261C1C;
 $cor-hover: #BF8069;
-
+@mixin correcao--fontes {
+    @media screen and (min-width:768px){
+        font-size: 1.34rem;
+    }
+}
 
 @mixin titulo {
     color: white;
@@ -48,7 +52,7 @@ $font-3:'Staatliches', cursive;
 }
 
 body {
-    
+    @include correcao--fontes;
     background-image: linear-gradient(80deg,$cor-fundo, $cor-hover);
     header {
         height: 230px;
@@ -149,7 +153,12 @@ body {
                 margin-top: 10px;
                 border-top: 1px solid rgba(0, 0, 0, 0.596);
                 padding-top: 30px;
+                .footer__col--links:hover{
+                    transform:scale(1.15);
+        transition-duration: 1.5s;
+                }
             }
         }
     }
+
 }

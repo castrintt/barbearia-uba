@@ -8,6 +8,11 @@
 body {
   background-image: linear-gradient(80deg, #261C1C, #BF8069);
 }
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.34rem;
+  }
+}
 body header {
   height: 230px;
   font-family: "Cinzel", serif;
@@ -137,6 +142,10 @@ body .footer__container .footer__row--links .footer__col--links {
   margin-top: 10px;
   border-top: 1px solid rgba(0, 0, 0, 0.596);
   padding-top: 30px;
+}
+body .footer__container .footer__row--links .footer__col--links .footer__col--links:hover {
+  transform: scale(1.15);
+  transition-duration: 1.5s;
 }
 
 /*# sourceMappingURL=style.css.map */
