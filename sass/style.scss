@@ -1,0 +1,155 @@
+$cor-fundo:#261C1C;
+$cor-texto:#261C1C;
+$cor-hover: #BF8069;
+
+
+@mixin titulo {
+    color: white;
+    font-family: $font-2;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+
+}
+@mixin correcao {
+    @media(min-width:575px){
+        margin:auto;
+        margin-bottom: 40px;
+    }
+    
+}
+
+@mixin alinhamento {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+@mixin correcao--video {
+    @media (min-width:768px){
+        height: 300px; 
+    }
+    
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cinzel&family=Staatliches&display=swap');
+
+$font-1:'Alfa Slab One', cursive;
+$font-2:'Cinzel', serif;
+$font-3:'Staatliches', cursive; 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    
+    background-image: linear-gradient(80deg,$cor-fundo, $cor-hover);
+    header {
+        height: 230px;
+        font-family: $font-2;
+        font-weight: 700;
+        background-color: white;
+        box-shadow:5px 5px 10px rgba(99, 98, 98, 0.904) ;
+        .header__container {
+            
+            height: 200px;
+            .header__row--logo {
+                height: 80%;
+               .header__img {
+                   height: 100%;
+                   position: relative;
+                   left: 50%;
+                   transform: translate(-50%);
+               } 
+            }
+            .header__row--link {
+                text-align: center;
+                .col__links {
+                    text-decoration: none;
+                    color: $cor-texto;
+                    font-weight: bold;
+                    padding-bottom: 5px;
+                    border-bottom: 1px solid $cor-fundo;
+                    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.658);
+                    
+                }
+
+                .col__links:hover{
+                    color:$cor-hover;
+                }
+            }
+        }
+    }
+    .main__container {
+        margin: 40px 0;
+        @include correcao;
+        .main__section--video {
+            margin-top: 40px
+            
+        }
+        .main__row--title {
+            .row__title {
+               @include titulo;
+
+            }
+        }
+        .row__section--incorporado {
+            @include correcao--video;
+        }
+    }
+    .main__section--slider {
+        margin: 40px 0;
+        .main__section--titulo {
+            @include titulo;
+        }
+    }
+    .barbeiros__container{
+        .barbeiros__col {
+            border-radius: 5%;
+        }
+        @include correcao;
+        margin: 40px 0;
+        .barbeiros__row--titulo{
+            @include titulo;
+            }
+            .col__titulo--barbeiros {
+                font-size: 1.2rem;
+            }
+        }
+        
+        .col {
+            margin: 0 0 20px 0;
+        }
+    .footer__container {
+        background-color: white;
+        height: 200px;
+        .footer__row--info {
+            height: 50%;
+            text-align: center;
+            position: relative;
+            top: 20%;
+            font-family: $font-2;
+            font-size: 0.9rem;
+            .footer__col--info {
+                @include alinhamento;
+                
+            }
+        }
+        .footer__row--links {
+            .footer__col--links {
+                text-align: center;
+                font-size: 1.5rem;
+                color: black;
+                margin-top: 10px;
+                border-top: 1px solid rgba(0, 0, 0, 0.596);
+                padding-top: 30px;
+            }
+        }
+    }
+}

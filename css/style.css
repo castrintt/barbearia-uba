@@ -1,3 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Cinzel&family=Staatliches&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-image: linear-gradient(80deg, #261C1C, #BF8069);
+}
+body header {
+  height: 230px;
+  font-family: "Cinzel", serif;
+  font-weight: 700;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(99, 98, 98, 0.904);
+}
+body header .header__container {
+  height: 200px;
+}
+body header .header__container .header__row--logo {
+  height: 80%;
+}
+body header .header__container .header__row--logo .header__img {
+  height: 100%;
+  position: relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+body header .header__container .header__row--link {
+  text-align: center;
+}
+body header .header__container .header__row--link .col__links {
+  text-decoration: none;
+  color: #261C1C;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 1px solid #261C1C;
+  text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.658);
+}
+body header .header__container .header__row--link .col__links:hover {
+  color: #BF8069;
+}
+body .main__container {
+  margin: 40px 0;
+}
+@media (min-width: 575px) {
+  body .main__container {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
+body .main__container .main__section--video {
+  margin-top: 40px;
+}
+body .main__container .main__row--title .row__title {
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+@media (min-width: 768px) {
+  body .main__container .row__section--incorporado {
+    height: 300px;
+  }
+}
+body .main__section--slider {
+  margin: 40px 0;
+}
+body .main__section--slider .main__section--titulo {
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+body .barbeiros__container {
+  margin: 40px 0;
+}
+body .barbeiros__container .barbeiros__col {
+  border-radius: 5%;
+}
+@media (min-width: 575px) {
+  body .barbeiros__container {
+    margin: auto;
+    margin-bottom: 40px;
+  }
+}
+body .barbeiros__container .barbeiros__row--titulo {
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 1.2rem;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  margin-bottom: 15px;
+  padding-bottom: 10px;
+}
+body .barbeiros__container .col__titulo--barbeiros {
+  font-size: 1.2rem;
+}
+body .col {
+  margin: 0 0 20px 0;
+}
+body .footer__container {
+  background-color: white;
+  height: 200px;
+}
+body .footer__container .footer__row--info {
+  height: 50%;
+  text-align: center;
+  position: relative;
+  top: 20%;
+  font-family: "Cinzel", serif;
+  font-size: 0.9rem;
+}
+body .footer__container .footer__row--info .footer__col--info {
+  position: relative;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+body .footer__container .footer__row--links .footer__col--links {
+  text-align: center;
+  font-size: 1.5rem;
+  color: black;
+  margin-top: 10px;
+  border-top: 1px solid rgba(0, 0, 0, 0.596);
+  padding-top: 30px;
+}
 
 /*# sourceMappingURL=style.css.map */
